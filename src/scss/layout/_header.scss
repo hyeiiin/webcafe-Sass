@@ -2,18 +2,31 @@
 @use "./../components" as *;
 
 .appHeader {
+<<<<<<< HEAD
   background: yellow;
   padding: rem(16px) rem(20px);
+=======
+  padding: rem(16px) rem(20px);
+  @include flexbox(column);
+  gap: rem(16px);
+>>>>>>> 814a2bd8c6466c791fcaf23866472f77be756022
 
   @include mobile {
     background: $dark-brown;
     color: $white;
+<<<<<<< HEAD
 
     @include flexbox(column);
+=======
+>>>>>>> 814a2bd8c6466c791fcaf23866472f77be756022
   }
 
   @include desktop {
     position: relative;
+<<<<<<< HEAD
+=======
+    @include containerMax;
+>>>>>>> 814a2bd8c6466c791fcaf23866472f77be756022
   }
 }
 
@@ -28,13 +41,20 @@
   }
 
   @include desktop {
+<<<<<<< HEAD
     @include posCenter;
+=======
+    @include posCenterY;
+>>>>>>> 814a2bd8c6466c791fcaf23866472f77be756022
   }
 }
 
 // 멤버 서비스
 .memberOnly {
+<<<<<<< HEAD
   background: green;
+=======
+>>>>>>> 814a2bd8c6466c791fcaf23866472f77be756022
   @include flexbox($justify: flex-end);
 
   @include mobile {
@@ -45,8 +65,14 @@
 // 검색 폼
 .searchForm {
   &__group {
+<<<<<<< HEAD
     background: blue;
     @include flexbox($justify: flex-end);
+=======
+    /* background: blue; */
+    @include flexbox($justify: flex-end);
+    gap: rem(16px);
+>>>>>>> 814a2bd8c6466c791fcaf23866472f77be756022
 
     @include mobile {
       .formInput {
@@ -56,7 +82,11 @@
 
     @include desktop {
       .formInput {
+<<<<<<< HEAD
         width: rem(460px);
+=======
+        width: rem(400px);
+>>>>>>> 814a2bd8c6466c791fcaf23866472f77be756022
       }
     }
   }
